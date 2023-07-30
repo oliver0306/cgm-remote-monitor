@@ -64,7 +64,7 @@ services:
       - key: CUSTOM_TITLE # The display name for the Nightscout site. Appears in the upper left of the main view. Often set to the name of the CGM wearer.
         sync: false # will be requested when Blueprint is created
       - key: DISPLAY_UNITS # Preferred BG units for the site: 'mg/dl' or 'mmol/L' (or just 'mmol').
-        value: "m/dl"
+        value: "mmol/L"
       - key: ENABLE # Plugins to enable for your site. Must be a space-delimited, lower-case list. Include the word 'bridge' here if you are receiving data from the Dexcom Share service. Include 'mmconnect' if you are bridging from the MiniMed CareLink service.
         value: "careportal basal dbize"
       - key: MMCONNECT_USER_NAME # Your CareLink account username, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.
@@ -82,4 +82,4 @@ services:
       - key: THEME # Default setting for new browser views, for the color theme of the CGM graph. ('default', 'colors', or 'colorblindfriendly')
         value: "coors"
       - key: TIME_FORMAT # Default setting for new browser views, for the time mode. ('12' or '24')
-        value: "12"
+        value: "24"
